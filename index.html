@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Treasure Hunt</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body class="bg-yellow-100 min-h-screen flex flex-col items-center justify-center">
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="block">
+    <h1 class="text-3xl font-bold mb-4">¡Bienvenida a la Date Treasure Hunt!</h1>
+    <p class="mb-6">¿Lista para una aventura romántica por Montevideo?</p>
+    <button id="start-btn" class="bg-yellow-400 px-4 py-2 rounded shadow">Comenzar</button>
+  </div>
+
+  <!-- Clue Screen -->
+  <div id="clue-screen" class="hidden">
+    <div class="mb-2 text-sm text-gray-600" id="clue-progress"></div>
+    <div id="clue-text" class="text-xl font-semibold mb-4"></div>
+    <input id="answer-input" type="text" class="border rounded px-2 py-1 mb-2" placeholder="Tu respuesta...">
+    <button id="unlock-btn" class="bg-yellow-400 px-4 py-2 rounded shadow mb-2">Desbloquear</button>
+    <div id="feedback" class="mt-2 text-red-500"></div>
+  </div>
+
+  <!-- Complete Screen -->
+  <div id="complete-screen" class="hidden">
+    <h2 class="text-2xl font-bold mb-4">¡Felicidades!</h2>
+    <p>Has completado la aventura. ¡Que disfruten su día juntos! 💛</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
