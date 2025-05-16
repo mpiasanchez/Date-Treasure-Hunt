@@ -128,3 +128,19 @@ date-treasure-hunt/
 - [ ] Completion screen shown.
 - [ ] PWA installable on mobile.
 - [ ] All screens styled and mobile-friendly.
+
+### Styling Guidelines
+
+- **Theme:** The app uses a dark theme throughout. All backgrounds must be dark (`bg-zinc-900` or similar). The background color of every page and container should always be a dark shade, never white or light.
+- **Text Color:** All main text and headings use `zinc-200` for high contrast and a soft, accessible look. Text is always light on dark backgrounds and black on light backgrounds (e.g., buttons).
+- **Accent Color:** Light/pale pink (`pink-200`) is used only for accents, such as button backgrounds, borders, and icons. Never use pink for main text or large headings.
+- **Buttons:** Buttons use `bg-pink-200` with `text-black` for strong contrast. On hover, use `bg-pink-300`. All buttons and inputs have visible focus rings (`focus:ring-pink-400`).
+- **Inputs:** Input fields use dark backgrounds, zinc-200 text, and pink borders for accent. Placeholders use `zinc-200` for sufficient contrast.
+- **Containers:** All main containers and cards use dark backgrounds (`bg-zinc-800` or `bg-zinc-900`) with pink accent borders where appropriate.
+- **Accessibility:**
+  - All color combinations meet or exceed WCAG 2.2 AA contrast requirements (minimum 4.5:1 for normal text, 3:1 for large text).
+  - Focus indicators are always visible for keyboard navigation.
+  - No color is used as the sole means of conveying information.
+  - All interactive elements are clearly distinguishable.
+
+> These guidelines ensure the app is visually appealing, romantic, and fully accessible for all users.
