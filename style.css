@@ -1,2 +1,8 @@
 /* style.css - Custom styles for Date Treasure Hunt (optional, Tailwind via CDN is primary) */
 /* Add any custom overrides or animations here if needed */
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  background-color: #18181b !important;
+}
