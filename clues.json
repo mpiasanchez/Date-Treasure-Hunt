@@ -1,13 +1,23 @@
 [
   {
+    "riddle": "Hace frio y tenemos sueño, tal vez un verde nos deje puestos",
+    "answer": "epsilon",
+    "reveal": "Pedile a la pipi que te de el fasito"
+  },
+  {
     "riddle": "Prende esa vela y arranca, que los cazadores te ven alla",
     "answer": "telizzia",
     "reveal": "Desayuno en telizzia hasta las 11am"
   },
   {
+    "riddle": "Si queres seguir de gira, paso a paso la banda se retira",
+    "answer": "caminar",
+    "reveal": "Caminar hasta Av. 18 de Julio 1764, llegando a las 11.45"
+  },
+  {
     "riddle": "Despues de comer rico, pasa por el taller con tu socia, asi arrancan con ritmo y con la espalda floja.",
     "answer": "masaje",
-    "reveal": "Caminar hasta Clínica Estética Adriana Modernell: Av. 18 de Julio 1764, Apto 402"
+    "reveal": "Entrar a Clínica Estética Adriana Modernell: Av. 18 de Julio 1764, Apto 402"
   },
   {
     "riddle": "Con la vela prendida y la espalda liberada, anda a pata tranqui: la mesa esta reservada.",
