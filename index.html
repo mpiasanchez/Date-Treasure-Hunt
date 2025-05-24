@@ -8,49 +8,40 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#18181b">
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center bg-[#232425] text-white">
+<body class="bg-zinc-900 min-h-screen flex flex-col items-center justify-center text-zinc-200">
   <!-- Welcome Screen -->
-  <div id="welcome-screen" class="flex flex-col items-center space-y-6 w-full max-w-xs" role="main" aria-labelledby="welcome-title">
-    <h1 id="welcome-title" class="text-2xl font-semibold text-white">Buen dia perrita loca</h1>
-    <p class="text-base text-white" id="welcome-desc">Listo para una aventura?</p>
-    <button id="start-btn" class="w-full bg-[#92648D] text-white font-semibold py-3 rounded-full mt-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white" aria-describedby="welcome-desc">START</button>
+  <div id="welcome-screen" class="flex flex-col items-center space-y-4">
+    <h1 class="text-3xl font-bold drop-shadow">Buen dia perrita loca</h1>
+    <p class="text-lg">Listo para una aventura?</p>
+    <button id="start-btn" class="bg-pink-200 hover:bg-pink-300 text-black font-bold py-2 px-6 rounded shadow focus:outline-none focus:ring-4 focus:ring-pink-400">Yes bitch!</button>
   </div>
 
   <!-- Clue Screen -->
-  <div id="clue-screen" class="hidden flex flex-col items-center space-y-8 w-full max-w-md" role="main" aria-labelledby="clue-progress">
-    <div class="w-full text-center text-base text-white mb-2" id="clue-progress" aria-live="polite"></div>
-    <div class="flex flex-col items-center w-full">
-      <label for="answer-input" id="clue-label" class="sr-only">Respuesta a la pista</label>
-      <div id="clue-text" class="text-base font-normal mb-6 text-white" aria-describedby="clue-label"></div>
-      <input id="answer-input" type="text" class="w-full max-w-xs border border-[#92648D] bg-white text-black rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-[#92648D] placeholder-zinc-400 text-base" placeholder="Input text" aria-labelledby="clue-label" aria-describedby="clue-text" autocomplete="off" />
-      <button id="unlock-btn" class="w-full max-w-xs bg-[#92648D] text-white font-semibold py-2 rounded-full mb-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Desbloquear</button>
-      <div id="feedback" class="mt-2 text-center text-[#92648D] font-medium" aria-live="polite"></div>
-      <div id="reveal-container" class="mt-2 hidden w-full flex flex-col items-center">
-        <label for="reveal-text" class="sr-only">Respuesta revelada</label>
-        <input id="reveal-text" class="w-full max-w-xs border border-[#92648D] bg-white text-black rounded-lg px-4 py-2 mb-2 text-center" readonly aria-readonly="true" aria-label="Respuesta revelada" />
-        <button id="continue-btn" class="w-full max-w-xs border border-[#92648D] text-[#92648D] font-semibold py-2 rounded-full mt-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Continuar</button>
+  <div id="clue-screen" class="hidden flex flex-col items-center space-y-6 w-full max-w-md">
+    <div class="w-full text-right text-sm text-zinc-400" id="clue-progress"></div>
+    <div class="bg-zinc-800 rounded-lg shadow p-6 w-full border-2 border-pink-200">
+      <div id="clue-text" class="text-xl font-semibold mb-4"></div>
+      <input id="answer-input" type="text" class="w-full border border-pink-200 bg-zinc-900 text-zinc-200 rounded px-3 py-2 mb-2 focus:outline-none focus:ring-4 focus:ring-pink-400 placeholder-zinc-200" placeholder="Tu respuesta...">
+      <button id="unlock-btn" class="w-full bg-pink-200 hover:bg-pink-300 text-black font-bold py-2 rounded focus:outline-none focus:ring-4 focus:ring-pink-400">Desbloquear</button>
+      <div id="feedback" class="mt-2 text-center"></div>
+      <div id="reveal-container" class="mt-4 hidden">
+        <div id="reveal-text" class="text-pink-200 text-lg font-bold mb-2"></div>
+        <button id="continue-btn" class="w-full bg-pink-200 hover:bg-pink-300 text-black font-bold py-2 rounded focus:outline-none focus:ring-4 focus:ring-pink-400 mt-2">Continuar</button>
       </div>
-      <div class="flex justify-center gap-8 mt-6 w-full">
-        <button id="prev-btn" class="border border-[#92648D] text-[#92648D] px-6 py-2 rounded-full font-medium transition disabled:opacity-40 focus:outline-none focus-visible:ring-2 focus-visible:ring-white" aria-label="Anterior pista">Anterior</button>
-        <button id="next-btn" class="border border-[#92648D] text-[#92648D] px-6 py-2 rounded-full font-medium transition disabled:opacity-40 focus:outline-none focus-visible:ring-2 focus-visible:ring-white" aria-label="Siguiente pista">Siguiente</button>
+      <div class="flex justify-between mt-6">
+        <button id="prev-btn" class="bg-zinc-700 text-zinc-200 px-4 py-2 rounded disabled:opacity-50">Anterior</button>
+        <button id="next-btn" class="bg-zinc-700 text-zinc-200 px-4 py-2 rounded disabled:opacity-50">Siguiente</button>
       </div>
     </div>
   </div>
 
   <!-- Complete Screen -->
-  <div id="complete-screen" class="hidden flex flex-col items-center space-y-6 w-full max-w-xs" role="main" aria-labelledby="complete-title">
-    <div class="text-4xl" aria-hidden="true">🎉</div>
-    <h2 id="complete-title" class="text-2xl font-semibold text-white">Bien metida, sarandonguero!</h2>
-    <p class="text-base text-white">Has completado la aventura. Espero que te hayas gozado descubriendo pistas, de gira juntos! <span class="text-[#92648D]" aria-hidden="true">💖</span></p>
+  <div id="complete-screen" class="hidden flex flex-col items-center space-y-4">
+    <div class="text-4xl">🎉</div>
+    <h2 class="text-2xl font-bold">Bien metida, sarandonguero!</h2>
+    <p class="text-lg">Has completado la aventura. Espero que te hayas gozado descubriendo pistas, de gira juntos! <span class="text-pink-200">💖</span></p>
   </div>
 
   <script src="app.js"></script>
-  <style>
-    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
-    input:read-only { background: #fff; color: #232425; }
-    /* Show unlock button */
-    #unlock-btn { display: block !important; }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
-  </style>
 </body>
 </html>
