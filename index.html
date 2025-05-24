@@ -11,9 +11,9 @@
 <body class="bg-zinc-900 min-h-screen flex flex-col items-center justify-center text-zinc-200">
   <!-- Welcome Screen -->
   <div id="welcome-screen" class="flex flex-col items-center space-y-4">
-    <h1 class="text-3xl font-bold drop-shadow">¡Bienvenid@ a la Treasure Hunt!</h1>
-    <p class="text-lg">List@ para una aventura?</p>
-    <button id="start-btn" class="bg-pink-200 hover:bg-pink-300 text-black font-bold py-2 px-6 rounded shadow focus:outline-none focus:ring-4 focus:ring-pink-400">Comenzar</button>
+    <h1 class="text-3xl font-bold drop-shadow">Buen dia perrita loca</h1>
+    <p class="text-lg">Listo para una aventura?</p>
+    <button id="start-btn" class="bg-pink-200 hover:bg-pink-300 text-black font-bold py-2 px-6 rounded shadow focus:outline-none focus:ring-4 focus:ring-pink-400">Yes bitch!</button>
   </div>
 
   <!-- Clue Screen -->
@@ -24,14 +24,22 @@
       <input id="answer-input" type="text" class="w-full border border-pink-200 bg-zinc-900 text-zinc-200 rounded px-3 py-2 mb-2 focus:outline-none focus:ring-4 focus:ring-pink-400 placeholder-zinc-200" placeholder="Tu respuesta...">
       <button id="unlock-btn" class="w-full bg-pink-200 hover:bg-pink-300 text-black font-bold py-2 rounded focus:outline-none focus:ring-4 focus:ring-pink-400">Desbloquear</button>
       <div id="feedback" class="mt-2 text-center"></div>
+      <div id="reveal-container" class="mt-4 hidden">
+        <div id="reveal-text" class="text-pink-200 text-lg font-bold mb-2"></div>
+        <button id="continue-btn" class="w-full bg-pink-200 hover:bg-pink-300 text-black font-bold py-2 rounded focus:outline-none focus:ring-4 focus:ring-pink-400 mt-2">Continuar</button>
+      </div>
+      <div class="flex justify-between mt-6">
+        <button id="prev-btn" class="bg-zinc-700 text-zinc-200 px-4 py-2 rounded disabled:opacity-50">Anterior</button>
+        <button id="next-btn" class="bg-zinc-700 text-zinc-200 px-4 py-2 rounded disabled:opacity-50">Siguiente</button>
+      </div>
     </div>
   </div>
 
   <!-- Complete Screen -->
   <div id="complete-screen" class="hidden flex flex-col items-center space-y-4">
     <div class="text-4xl">🎉</div>
-    <h2 class="text-2xl font-bold">¡Felicidades, sarandonguer@!</h2>
-    <p class="text-lg">Has completado la aventura. ¡Espero que hayas disfrutado cada pista y cada momento juntos! <span class="text-pink-200">💖</span></p>
+    <h2 class="text-2xl font-bold">Bien metida, sarandonguero!</h2>
+    <p class="text-lg">Has completado la aventura. Espero que te hayas gozado descubriendo pistas, de gira juntos! <span class="text-pink-200">💖</span></p>
   </div>
 
   <script src="app.js"></script>
