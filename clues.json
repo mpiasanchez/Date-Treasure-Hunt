@@ -1,10 +1,27 @@
 [
   {
-    "riddle": "Empieza el día con dulzura y amor, en casa juntos, ¿cuál es el sabor?",
-    "answer": "desayuno"
+    "riddle": "Prende esa vela y arranca, que los cazadores te ven alla",
+    "answer": "telizzia",
+    "reveal": "Desayuno en telizzia hasta las 11am"
   },
   {
-    "riddle": "Un viaje en bus, destino relax. ¿A dónde vamos para dejar el estrés atrás?",
-    "answer": "masaje"
+    "riddle": "Despues de comer rico, pasa por el taller con tu socia, asi arrancan con ritmo y con la espalda floja.",
+    "answer": "masaje",
+    "reveal": "Caminar hasta Clínica Estética Adriana Modernell: Av. 18 de Julio 1764, Apto 402"
+  },
+  {
+    "riddle": "Con la vela prendida y la espalda liberada, anda a pata tranqui: la mesa esta reservada.",
+    "answer": "almuerzo",
+    "reveal": "Caminar hasta SAVIA Cafe y Cultura: Juan D. Jackson 1301"
+  },
+  {
+    "riddle": "Prendete el digestivo y arranca pa la parada, que en el laboratorio te invitan a viajarla.",
+    "answer": "ciencia",
+    "reveal": "Tomar bus hasta el Espacio Ciencia: LATU - Av. Dra. María Luisa Saldún de Rodríguez 2037"
+  },
+  {
+    "riddle": "Ahora que cayo la noche zarpada en frio, los pibes vuelven con el cazador mas lindo",
+    "answer": "casa",
+    "reveal": "Tomar bus para volver a casa a jugar a los gatitos(cringe)"
   }
 ]
