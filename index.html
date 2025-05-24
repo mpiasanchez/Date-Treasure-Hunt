@@ -27,7 +27,7 @@
       <div id="feedback" class="mt-2 text-center text-[#92648D] font-medium" aria-live="polite"></div>
       <div id="reveal-container" class="mt-2 hidden w-full flex flex-col items-center">
         <label for="reveal-text" class="sr-only">Respuesta revelada</label>
-        <input id="reveal-text" class="w-full max-w-xs border border-[#92648D] bg-white text-black rounded-lg px-4 py-2 mb-2 text-center" readonly aria-readonly="true" aria-label="Respuesta revelada" />
+        <div id="reveal-text" class="w-full max-w-xs rounded-lg px-4 py-2 mb-2 text-center text-[#444] bg-white border border-[#92648D] text-base font-medium"></div>
         <button id="continue-btn" class="w-full max-w-xs border border-[#92648D] text-[#92648D] font-semibold py-2 rounded-full mt-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Continuar</button>
       </div>
       <div class="flex justify-center gap-8 mt-6 w-full">
@@ -46,9 +46,9 @@
 
   <script src="app.js"></script>
   <style>
-    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; background-color: #232425 !important; }
-    input:read-only { background: #fff; color: #232425; }
-    /* Show unlock button */
+    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; background: #232425 !important; background-color: #232425 !important; }
+    input:read-only { background: #fff; color: #444 !important; }
+    #answer-input { color: #000 !important; }
     #unlock-btn { display: block !important; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
   </style>
